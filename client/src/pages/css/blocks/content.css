@@ -1,0 +1,20 @@
+.content {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: unset;
+}
+
+.content__nav {
+  overflow: hidden;
+}
+
+.content__main {
+  overflow: hidden;
+}
+
+@media (max-width: 760px) {
+  .content {
+    grid-template-columns: unset;
+    grid-template-rows: min-content 1fr;
+  }
+}

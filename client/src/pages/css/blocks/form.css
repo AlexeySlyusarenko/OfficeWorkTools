@@ -1,0 +1,80 @@
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  gap: 10px;
+  position: relative;
+  padding: 20px;
+}
+
+.form__fieldset {
+  position: relative;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__fieldset-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  margin: 0;
+}
+.form__legend {
+  align-self: center;
+  padding: 0 10px 0 0;
+}
+
+.form__input-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.form__input-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__input-text {
+  padding: 7px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+input:checked ~ .form__input-text {
+  background-color: rgb(170, 170, 170);
+  cursor: default;
+}
+
+.form__button {
+  width: fit-content;
+  margin: 10px 0 0 0;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(170, 170, 170);
+  cursor: pointer;
+  user-select: none;
+}
+.form__button:hover {
+  background-color: rgb(170, 170, 170);
+}
+
+@media (max-width: 760px) {
+  .form__fieldset-wrapper {
+    flex-flow: column nowrap;
+    align-items: start;
+  }
+
+  .form__legend {
+    align-self: start;
+    padding: 0 0 10px 0;
+  }
+
+  .form__input-wrapper {
+    flex-flow: row wrap;
+    align-items: start;
+  }
+}

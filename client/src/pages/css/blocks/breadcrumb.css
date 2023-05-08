@@ -1,0 +1,31 @@
+.breadcrumb {
+  overflow: auto;
+}
+
+.breadcrumb__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.breadcrumb__item {
+  list-style-type: none;
+}
+
+.breadcrumb__link {
+  display: block;
+  margin: 0 10px 0 0;
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+}
+.breadcrumb__link:hover,
+.breadcrumb__link:active {
+  background-color: rgb(225, 225, 225);
+  color: rgb(0, 0, 0);
+}
+.breadcrumb__link--active {
+  background-color: rgb(170, 170, 170);
+  color: rgb(0, 0, 0);
+}

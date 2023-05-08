@@ -1,0 +1,36 @@
+.files {
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+}
+
+.files__breadcrumb {
+  margin-bottom: 10px;
+  grid-column: 1/4;
+}
+
+.files__wrapper-list {
+  overflow: auto;
+}
+
+.files__list {
+  margin: 0 15px 0 0;
+  padding: 0;
+}
+.files__list--main {
+  padding: 0 20px;
+}
+
+.files__item {
+  margin: 0 0 5px 0;
+  padding: 8px 10px;
+  list-style-type: none;
+}
+.files__item--active {
+  border-radius: 10px;
+  background-color: rgb(170, 170, 170);
+}

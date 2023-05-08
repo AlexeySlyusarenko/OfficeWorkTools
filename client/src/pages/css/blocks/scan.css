@@ -1,0 +1,5 @@
+.scan {
+  overflow: auto;
+  position: relative;
+  height: 100%;
+}

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, width=device-width" />
+    <title>Utils</title>
+    <link rel="stylesheet" href="css/scan.css" />
+  </head>
+  <body class="page">
+    <header class="page__header header">
+      <div class="header__user">user</div>
+    </header>
+    <main class="page__content content">
+      <h1 class="visually-hidden">Utils</h1>
+      <nav class="content__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item" role="link">files</li>
+          <li class="nav__item" role="link">printer</li>
+          <li class="nav__item nav__item--active" role="link">scan</li>
+        </ul>
+      </nav>
+      <section class="content__main">
+        <h2 class="visually-hidden">Scanner</h2>
+        <div class="scan">
+          <form class="scan__form form" action="#" method="POST">
+            <fieldset class="form__fieldset">
+              <div class="form__fieldset-wrapper">
+                <legend class="visually-hidden">Paper</legend>
+                <span class="form__legend"> Paper </span>
+                <div class="form__input-wrapper">
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="paper"
+                      value="0"
+                      checked="checked"
+                    />
+                    <span class="form__input-text"> A4 (portrait) </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="paper"
+                      value="1"
+                    />
+                    <span class="form__input-text"> A4 (album) </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="paper"
+                      value="2"
+                    />
+                    <span class="form__input-text"> A3 </span>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <div class="form__fieldset-wrapper">
+                <legend class="visually-hidden">Mode</legend>
+                <span class="form__legend"> Mode </span>
+                <div class="form__input-wrapper">
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="mode"
+                      value="0"
+                      checked="checked"
+                    />
+                    <span class="form__input-text"> Full Color </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="mode"
+                      value="1"
+                    />
+                    <span class="form__input-text"> Grayscale </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="mode"
+                      value="2"
+                    />
+                    <span class="form__input-text"> Black and White </span>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <div class="form__fieldset-wrapper">
+                <legend class="visually-hidden">Source</legend>
+                <span class="form__legend"> Source </span>
+                <div class="form__input-wrapper">
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="source"
+                      value="0"
+                    />
+                    <span class="form__input-text"> Flatbed </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="source"
+                      value="1"
+                      checked="checked"
+                    />
+                    <span class="form__input-text"> ADF (1 Side) </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="source"
+                      value="2"
+                    />
+                    <span class="form__input-text"> ADF (Top top Top) </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="source"
+                      value="3"
+                    />
+                    <span class="form__input-text"> ADF (Top top Bottom) </span>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <div class="form__fieldset-wrapper">
+                <legend class="visually-hidden">Resolution</legend>
+                <span class="form__legend"> Resolution </span>
+                <div class="form__input-wrapper">
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="resolution"
+                      value="0"
+                    />
+                    <span class="form__input-text"> 75 </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="resolution"
+                      value="1"
+                    />
+                    <span class="form__input-text"> 100 </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="resolution"
+                      value="2"
+                    />
+                    <span class="form__input-text"> 150 </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="resolution"
+                      value="3"
+                      checked="checked"
+                    />
+                    <span class="form__input-text"> 200 </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="resolution"
+                      value="4"
+                    />
+                    <span class="form__input-text"> 300 </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="resolution"
+                      value="5"
+                    />
+                    <span class="form__input-text"> 600 </span>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <div class="form__fieldset-wrapper">
+                <legend class="visually-hidden">Format</legend>
+                <span class="form__legend"> Format </span>
+                <div class="form__input-wrapper">
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="format"
+                      value="0"
+                      checked="checked"
+                    />
+                    <span class="form__input-text"> pdf </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="format"
+                      value="1"
+                    />
+                    <span class="form__input-text"> pnm </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="format"
+                      value="2"
+                    />
+                    <span class="form__input-text"> tiff </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="format"
+                      value="3"
+                    />
+                    <span class="form__input-text"> png </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="format"
+                      value="4"
+                    />
+                    <span class="form__input-text"> jpeg </span>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <div class="form__fieldset-wrapper">
+                <legend class="visually-hidden">Quality</legend>
+                <span class="form__legend"> Quality </span>
+                <div class="form__input-wrapper">
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="quality"
+                      value="0"
+                    />
+                    <span class="form__input-text"> raw </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="quality"
+                      value="1"
+                    />
+                    <span class="form__input-text"> high </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="quality"
+                      value="2"
+                      checked="checked"
+                    />
+                    <span class="form__input-text"> medium </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="quality"
+                      value="3"
+                    />
+                    <span class="form__input-text"> low </span>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <div class="form__fieldset-wrapper">
+                <legend class="visually-hidden">Batch</legend>
+                <span class="form__legend"> Batch </span>
+                <div class="form__input-wrapper">
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="batch"
+                      value="0"
+                    />
+                    <span class="form__input-text"> no </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="batch"
+                      value="1"
+                      checked="checked"
+                    />
+                    <span class="form__input-text"> yes </span>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <div class="form__fieldset-wrapper">
+                <legend class="visually-hidden">Join files</legend>
+                <span class="form__legend"> Join files </span>
+                <div class="form__input-wrapper">
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="join"
+                      value="0"
+                    />
+                    <span class="form__input-text"> no </span>
+                  </label>
+                  <label class="form__input-label">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="join"
+                      value="1"
+                      checked="checked"
+                    />
+                    <span class="form__input-text"> yes </span>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <button class="form__button" type="submit">Make scan</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page__footer footer">
+      <span class="footer__developer"> Designed by Alexey Slyusarenko </span>
+    </footer>
+  </body>
+</html>
